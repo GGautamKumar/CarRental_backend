@@ -24,6 +24,7 @@ app.use(cors({
    methods:["POST","GET","OPTIONS","PUT","DELETE","PATCH"],
     credentials: true,
 }))
+app.options("*", cors());
 
 app.use(cookieParser());
 
