@@ -20,7 +20,7 @@ app.use(express.json());
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors({
-   origin:process.env.START_ORIGIN,
+   origin:"*",
     credentials: true,
 }))
 
