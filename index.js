@@ -21,6 +21,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors({
    origin:["https://car-rental-frontend-olive.vercel.app"],
+   methods:["POST","GET","OPTIONS","PUT","DELETE","PATCH"],
     credentials: true,
 }))
 
