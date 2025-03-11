@@ -20,7 +20,7 @@ app.use(express.json());
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors({
-   origin:"https://car-rental-frontend-git-main-gautams-projects-6a7f62ca.vercel.app",
+   origin:process.env.START_ORIGIN,
     credentials: true,
 }))
 
