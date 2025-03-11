@@ -22,7 +22,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors({
    origin:["https://car-rental-frontend-olive.vercel.app"],
    methods: ["GET", "POST", "PUT", "DELETE"],
-   allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
 }))
 app.options("*", cors());
